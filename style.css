@@ -1,4 +1,5 @@
-body {
+body,
+footer {
   font-family: "DM Serif Display", serif;
 }
 h1 {
@@ -64,4 +65,16 @@ small {
 }
 #description {
   text-transform: capitalize;
+}
+.codeLink {
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+footer {
+  font-size: 14px;
+  margin-left: 386px;
+}
+.name {
+  font-style: italic;
 }

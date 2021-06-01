@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cappadocia</title>
+
+    <style>
+      body {
+        background: linear-gradient(
+          108.1deg,
+          rgb(167, 220, 225) 11.2%,
+          rgb(217, 239, 242) 88.9%
+        );
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #0c0a6d;
+        border-radius: 15px;
+        padding-bottom: 40px;
+      }
+      h1,
+      h2,
+      p,
+      .footer,
+      .wikipedia {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 50px;
+        color: #0c0a6d;
+      }
+      h2 {
+        color: purple;
+        text-decoration: underline;
+        font-weight: 1500;
+        font-size: 30px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        font-style: oblique;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        width: 300px;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      .wikipedia {
+        color: purple;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+      }
+      .wikipedia:hover {
+        text-decoration: underline;
+      }
+      button {
+        background-color: #fff;
+        color: #0c0a6d;
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        margin: 0px auto;
+        padding: 18px;
+
+        display: block;
+        border: solid 1px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        background-color: #0c0a6d;
+        color: #fff;
+        cursor: grabbing;
+        opacity: 0.8;
+      }
+      .footer {
+        font-size: 14px;
+        transition: all 200ms ease-in;
+      }
+      .footer:hover {
+        color: #0c0a6d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Cappadocia</h1>
+      <h2>
+        <strong>
+          <em> ·Central Anatolia Region· </em>
+        </strong>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/740/original/photo.jpeg?1619195668"
+        alt="city of cappadocia"
+      />
+      <p>
+        <strong>
+          Since the late 300s BC the name Cappadocia came to be restricted to
+          the inland province (sometimes called Great Cappadocia), Upper
+          Cappadocia, which alone will be the focus of this article. Lower
+          Cappadocia is focused to elsewhere. According to Herodotus, in the
+          time of the Ionian Revolt (499 BC), the Cappadocians were reported as
+          occupying a region from Mount Taurus to the vicinity of the Euxine
+          (Black Sea). Cappadocia, in this sense, was bounded in the south by
+          the chain of the Taurus Mountains that separate it from Cilicia, to
+          the east by the upper Euphrates, to the north by Pontus, and to the
+          west by Lycaonia and eastern Galatia. The name, traditionally used in
+          Christian sources throughout history, continues in use as an
+          international tourism concept to define a region of exceptional
+          natural wonders, in particular characterized by fairy chimneys and a
+          unique historical and cultural heritage.
+        </strong>
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Cappadocia"
+        target="_blank"
+        class="wikipedia"
+      >
+        Read more on Wikipedia
+      </a>
+      <br />
+      <button>Join Balloon Tour ♥︎</button>
+      <br />
+      <div class="footer">
+        <em>This page was built by <strong>Gizem Eda Varol</strong></em>
+      </div>
+
+      <script>
+        function joinTour() {
+          let fullName = prompt("What is your full name?");
+          let age = prompt("What is your age?");
+          if (age >= 16) {
+            alert(
+              "Congratulations, " +
+                fullName +
+                "! Your age is enough to join the Balloon Tour 🥳"
+            );
+            let email = prompt("What is your email?");
+            alert(
+              "We will be in touch as soon as possible! Please, do not forget to be ready before sunrise 😉🌤"
+            );
+          } else {
+            alert(
+              "Unfortunately " +
+                fullName +
+                ", you are not allowed to join the tour. Talk to your parents and convince them to join this incredible adventure! 🤓"
+            );
+          }
+        }
+        let joinButton = document.querySelector("button");
+        joinButton.addEventListener("click", joinTour);
+      </script>
+    </div>
+  </body>
+</html>
