@@ -19,7 +19,14 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1></h1>
+        <div class="row">
+          <div class="col-6">
+            <h1></h1>
+          </div>
+          <div class="col-6">
+            <h2>Today - 30/04/21</h2>
+          </div>
+        </div>
         <div class="row">
             <div class="col-6">
                 <form id="search-form">
@@ -29,17 +36,16 @@
                     placeholder="Enter a city"
                     autofocus="on"
                   />
-                
               </div>              
         <div class="col-6">
           <span>
-            <button type="submit" class="btn btn-outline-success btn-lg searchButton">🔎 Search</button></span>
+            <button type="submit" class="btn btn-outline-success searchButton">🔎 Search</button></span>
           <span>
-            <button type="submit" class="btn btn-outline-dark btn-lg currentButton">📌 Current</button>
+            <button type="submit" class="btn btn-outline-dark currentButton">📌 Current</button>
           </span></form> </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col">
             <img
             src="weather.svg" 
             alt="Cloudy icon"
@@ -50,9 +56,7 @@
           <span class="units"><a href="#" id="celsius-link">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a></span>
         </div>
-        <div class="col-6">
-        <h2>Today - 30/04/21</h2>
-      </div>      
+              
       </div>
         <hr />
         <ul>
