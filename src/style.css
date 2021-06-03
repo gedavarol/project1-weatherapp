@@ -73,7 +73,6 @@ small {
 }
 footer {
   font-size: 14px;
-  margin: 50 px;
 }
 .name {
   font-style: italic;
@@ -81,4 +80,7 @@ footer {
 .searchButton,
 .currentButton {
   margin-top: 15px;
+}
+#search-form {
+  margin: 40 0 0 px;
 }
