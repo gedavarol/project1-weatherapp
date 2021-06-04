@@ -18,22 +18,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
-            <h1></h1>
-          </div>
-          <div class="col-6">
-            <h2>Today - 30/04/21</h2>
-          </div>
-        </div>
+      <div class="weather-app">     
         <div class="row">
             <div class="col-6">
                 <form id="search-form">
                   <input
                     type="text"
                     id="form-city"
-                    placeholder="Enter a city"
+                    placeholder="Enter a city" 
                     autofocus="on"
                   />
               </div>              
@@ -45,12 +37,15 @@
           </span></form> </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-6">
+                <h1></h1>
+              </div>
+              <div class="col-6">
             <img
             src="images/weather.svg" 
             alt="Cloudy icon"
             class="weather-icon float-left"
-            width="120"
+            width="160"
             <div class="float-left">
           <span class="temperature" id="temperature"></span>
           <span class="units"><a href="#" id="celsius-link">°C</a> |
@@ -61,13 +56,16 @@
         <hr />
         <ul>
           <div class="row">
-            <div class="col-6">
+              <div class="col-4">
+                  <h2>Today - 30/04/21</h2>
+              </div>
+            <div class="col-4">
               <li >
                 Description: <span id="description"></span>
                 <div>Humidity 💧: <span id="humidity"></span>%</div>
               </li>
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <li>
                 Wind 🌬: <span id ="wind"></span> km/hr
                 <div>Feels like 🌥: <span id="feelsLike"></span>ºC</div>
@@ -103,12 +101,16 @@
             <div><small>8ºC</small></div>
           </div>
         </div>
+        <hr />
+        <footer>
+          <a href="https://github.com/gedavarol/project1-weatherapp" target="_blank" class="codeLink">Open-source code</a><span class="name">, by Gizem Eda Varol</span>
+          </footer>
       </div>
+   
     </div>
+  
     </div>
-    <footer>
-    <a href="https://github.com/gedavarol/project1-weatherapp" target="_blank" class="codeLink">Open-source code</a><span class="name">, by Gizem Eda Varol</span>
-    </footer>
+   
     <script src="src/script.js"></script>
   </body>
 </html>
