@@ -38,6 +38,11 @@ function displayWeatherCondition(response) {
   document.querySelector("#feelsLike").innerHTML = Math.round(
     response.data.main.feels_like
   );
+  document.querySelector("h1").innerHTML = response.data.name;
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
@@ -79,6 +84,7 @@ function clickCelsius(event) {
 let currentTime = document.querySelector("h2");
 let now = new Date();
 currentTime.innerHTML = formatDate(now);
+let icon = document.querySelector("#icon");
 
 let searchButton = document.querySelector("#search-form");
 searchButton.addEventListener("submit", showCity);
