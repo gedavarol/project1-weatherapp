@@ -23,16 +23,16 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <div class="row">
-          <div class="col">
-            <form id="search-form">
+        <form id="search-form">
+          <div class="row p-2 m-1">
+            <div class="col-12 p-6 m-2">
               <input
                 type="text"
                 id="form-city"
                 placeholder="Enter a city"
                 autofocus="on"
               />
-              <span>
+              <span class="col-2">
                 <button
                   type="submit"
                   class="btn btn-outline-success searchButton"
@@ -40,7 +40,7 @@
                   🔎 Search
                 </button>
               </span>
-              <span>
+              <span class="col-2">
                 <button
                   type="submit"
                   class="btn btn-outline-dark currentButton"
@@ -48,86 +48,86 @@
                   📌 Current
                 </button>
               </span>
-            </form>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <h1></h1>
-            </div>
-            <div class="col-6">
-              <img
-                src=""
-                alt="API icon"
-                class="weather-icon float-left"
-                id="icon"
-                <div
-                class="float-left"
-              />
-              <span class="temperature" id="temperature"></span>
-              <span class="units"
-                ><a href="#" id="celsius-link">°C</a> |
-                <a href="#" id="fahrenheit-link">°F</a></span
-              >
             </div>
           </div>
-          <hr />
-          <ul>
-            <div class="row">
-              <div class="col-4">
-                <h2>Today - 30/04/21</h2>
-              </div>
-              <div class="col-4">
-                <li>
-                  Description: <span id="description"></span>
-                  <div>Humidity 💧: <span id="humidity"></span>%</div>
-                </li>
-              </div>
-              <div class="col-4">
-                <li>
-                  Wind 🌬: <span id="wind"></span> km/hr
-                  <div>Feels like 🌥: <span id="feelsLike"></span>ºC</div>
-                </li>
-              </div>
-            </div>
-          </ul>
-          <hr />
-          <div class="row">
-            <div class="col">
-              Wed
-              <div>🌨</div>
-              <div><small>8ºC</small></div>
-            </div>
-            <div class="col">
-              Thu
-              <div>🌨</div>
-              <div><small>8ºC</small></div>
-            </div>
-            <div class="col">
-              Fri
-              <div>🌨</div>
-              <div><small>8ºC</small></div>
-            </div>
-            <div class="col">
-              Sat
-              <div>🌨</div>
-              <div><small>8ºC</small></div>
-            </div>
-            <div class="col">
-              Sun
-              <div>🌨</div>
-              <div><small>8ºC</small></div>
-            </div>
+        </form>
+        <div class="row">
+          <div class="col-6">
+            <h1></h1>
           </div>
-          <hr />
-          <footer>
-            <a
-              href="https://github.com/gedavarol/project1-weatherapp"
-              target="_blank"
-              class="codeLink"
-              >Open-source code</a
-            ><span class="name">, by Gizem Eda Varol</span>
-          </footer>
+          <div class="col-6">
+            <img
+              src=""
+              alt="API icon"
+              class="weather-icon float-left"
+              id="icon"
+              <div
+              class="float-left"
+            />
+            <span class="temperature" id="temperature"></span>
+            <span class="units"
+              ><a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a></span
+            >
+          </div>
         </div>
+        <hr />
+        <ul>
+          <div class="row">
+            <div class="col-4">
+              <h2>Today - 30/04/21</h2>
+            </div>
+            <div class="col-4">
+              <li>
+                Description: <span id="description"></span>
+                <div>Humidity 💧: <span id="humidity"></span>%</div>
+              </li>
+            </div>
+            <div class="col-4">
+              <li>
+                Wind 🌬: <span id="wind"></span> km/hr
+                <div>Feels like 🌥: <span id="feelsLike"></span>ºC</div>
+              </li>
+            </div>
+          </div>
+        </ul>
+        <hr />
+        <div class="row">
+          <div class="col">
+            Wed
+            <div>🌨</div>
+            <div><small>8ºC</small></div>
+          </div>
+          <div class="col">
+            Thu
+            <div>🌨</div>
+            <div><small>8ºC</small></div>
+          </div>
+          <div class="col">
+            Fri
+            <div>🌨</div>
+            <div><small>8ºC</small></div>
+          </div>
+          <div class="col">
+            Sat
+            <div>🌨</div>
+            <div><small>8ºC</small></div>
+          </div>
+          <div class="col">
+            Sun
+            <div>🌨</div>
+            <div><small>8ºC</small></div>
+          </div>
+        </div>
+        <hr />
+        <footer>
+          <a
+            href="https://github.com/gedavarol/project1-weatherapp"
+            target="_blank"
+            class="codeLink"
+            >Open-source code</a
+          ><span class="name">, by Gizem Eda Varol</span>
+        </footer>
       </div>
     </div>
     <script src="src/script.js"></script>

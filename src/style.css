@@ -8,14 +8,14 @@ footer {
 .weather-app {
   border: 1px solid #407088;
   border-radius: 15px;
-  padding: 40px 30px;
+  padding: 25px 40px 20px;
   margin: 30px auto;
-  max-width: 800px;
+  max-width: 750px;
   background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 #search-form {
   font-size: 24px;
-  padding-bottom: 30px;
+ 
   margin: 0 auto;
 }
 #form-city {
@@ -24,16 +24,16 @@ footer {
 }
 input#form-city {
   margin: 10px 0;
-  padding: 14px 70px;
-}
-#description {
-  text-transform: capitalize;
+  padding: 13px;
 }
 .searchButton,
 .currentButton {
   padding: 16px 30px;
-  margin: 6 px;
 }
+#description {
+  text-transform: capitalize;
+}
+
 h1 {
   margin-left: 27px;
   line-height: 20px;
@@ -69,7 +69,6 @@ li {
 .col-6 {
   padding: 10px auto;
   margin: 0 10px;
-
   width: 47%;
 }
 .col-4 {
@@ -97,3 +96,16 @@ small {
 .name {
   font-style: italic;
 }
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
