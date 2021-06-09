@@ -15,7 +15,6 @@ footer {
 }
 #search-form {
   font-size: 24px;
-
   margin: 0 auto;
 }
 #form-city {
@@ -30,67 +29,30 @@ input#form-city {
 .currentButton {
   padding: 16px 30px;
 }
+.currentButton:hover {
+  background-color: #455d7a;
+}
 #description {
   text-transform: capitalize;
 }
 
 h1 {
-  margin-left: 27px;
-  line-height: 20px;
-  padding-top: 30px;
+  color: #3d0240;
+  font-size: 33px;
+  margin-left: 33px;
+  padding-top: 36px;
+  opacity: 0.9;
 }
 .temperature {
   font-size: 54px;
   font-weight: 400;
   line-height: 2;
+  opacity: 0.9;
 }
 .units {
   position: relative;
   top: -22px;
   font-size: 16px;
-}
-h2,
-strong {
-  color: #060b13;
-  font-size: 24px;
-}
-h2 {
-  color: #b81875;
-  margin-top: 10px;
-}
-li {
-  color: #4c4d70;
-  font-size: 16px;
-  list-style: none;
-}
-.col-6 {
-  margin: 0 10px;
-  width: 47%;
-}
-.col-4 {
-  margin: 10px 0 10px;
-  padding-left: 24px;
-}
-.col {
-  margin: 10px 35px 10px;
-  font-size: 20px;
-}
-footer {
-  font-size: 14px;
-  margin: 20px 0 0;
-  padding-left: 30px;
-}
-small {
-  font-size: 20px;
-  color: #38598b;
-}
-.codeLink {
-  text-decoration: none;
-  text-align: center;
-  font-size: 14px;
-}
-.name {
-  font-style: italic;
 }
 .units .active {
   color: #000;
@@ -100,4 +62,61 @@ small {
 .units .active:hover {
   text-decoration: none;
   cursor: default;
+}
+h2 {
+  color: #4e3188;
+  font-size: 28px;
+  font-weight: 100;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+li {
+  font-size: 16px;
+  list-style: none;
+  color: #5e63b6;
+}
+.condition {
+  color: #c54c82;
+}
+.col-4 li {
+  padding-top: 10px;
+  opacity: 0.9;
+}
+.col {
+  margin: 10px 35px 10px;
+  font-size: 20px;
+}
+.forcast-day {
+  color: #c54c82;
+  font-weight: bolder;
+  opacity: 0.6;
+  font-size: 22px;
+}
+.weather-forecast {
+  text-align: center;
+}
+.forecast-temperatures {
+  font-size: 16px;
+  color: #5e63b6;
+}
+.forecast-temperature-max {
+  font-weight: bold;
+}
+.forecast-temperature-min {
+  color: #5e63b6;
+  opacity: 0.7;
+}
+footer {
+  font-size: 14px;
+  margin: 20px 0 0;
+  padding-left: 30px;
+  opacity: 0.7;
+}
+.codeLink {
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+.name {
+  font-style: italic;
 }
