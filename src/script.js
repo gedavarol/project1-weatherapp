@@ -21,7 +21,6 @@ function formatDate(now) {
 }
 
 function displayWeatherCondition(response) {
-  console.log(response);
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -43,6 +42,7 @@ function displayWeatherCondition(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  let celsiusTemperature = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -71,31 +71,39 @@ function searchLocation(position) {
 
 function clickFahrenheit(event) {
   event.preventDefault();
-  let link = document.querySelector(".temperature");
-  link.innerHTML = "66";
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = Math.round((celsiusTemperature * 9) / 5 + 32);
+  temperatureElement.innerHTML = fahrenheitTemperature;
 }
 
 function clickCelsius(event) {
   event.preventDefault();
-  let link = document.querySelector(".temperature");
-  link.innerHTML = "19";
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celsiusTemperature;
 }
 
-let currentTime = document.querySelector("h2");
-let now = new Date();
-currentTime.innerHTML = formatDate(now);
 let icon = document.querySelector("#icon");
+
+let celsiusTemperature = null;
 
 let searchButton = document.querySelector("#search-form");
 searchButton.addEventListener("submit", showCity);
 
-let link = document.querySelector("#fahrenheit-link");
-link.addEventListener("click", clickFahrenheit);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", clickFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", clickCelsius);
 
 let currentButton = document.querySelector(".currentButton");
 currentButton.addEventListener("click", getCurrentLocation);
+
+let currentTime = document.querySelector("h2");
+let now = new Date();
+currentTime.innerHTML = formatDate(now);
 
 searchCity("Barcelona");

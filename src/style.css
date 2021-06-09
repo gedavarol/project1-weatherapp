@@ -15,7 +15,7 @@ footer {
 }
 #search-form {
   font-size: 24px;
- 
+
   margin: 0 auto;
 }
 #form-city {
@@ -73,7 +73,7 @@ li {
 }
 .col-4 {
   margin: 10px 0 10px;
-  padding-left: 46px;
+  padding-left: 24px;
 }
 .col {
   margin: 10px 35px 10px;
@@ -96,16 +96,11 @@ small {
 .name {
   font-style: italic;
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+.units .active {
+  color: #000;
+  cursor: default;
+  text-decoration: none;
+}
+.units .active:hover {
+  text-decoration: none;
+}
