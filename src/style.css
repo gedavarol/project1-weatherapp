@@ -63,6 +63,8 @@ h1 {
   text-decoration: none;
   cursor: default;
 }
+.col-6 {
+}
 h2 {
   color: #4e3188;
   font-size: 28px;
@@ -94,9 +96,10 @@ li {
 }
 .weather-forecast {
   text-align: center;
+  padding: 20px auto;
 }
 .forecast-temperatures {
-  font-size: 16px;
+  font-size: 15px;
   color: #5e63b6;
 }
 .forecast-temperature-max {

@@ -20,6 +20,29 @@ function formatDate(now) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+              <div class="forcast-day">${day}</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" width="42"></a>
+              <div class="forecast-temperatures">
+                <span class="forecast-temperature-max">18º</span>
+                <span class="forecast-temperature-min">12º</span>
+              </div>
+      </div>
+          `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
+
 function displayWeatherCondition(response) {
   console.log(response);
   document.querySelector("h1").innerHTML = response.data.name;
