@@ -38,7 +38,7 @@ input#form-city {
 
 h1 {
   color: #3d0240;
-  font-size: 33px;
+  font-size: 36px;
   margin-left: 33px;
   padding-top: 36px;
   opacity: 0.9;
@@ -48,6 +48,10 @@ h1 {
   font-weight: 400;
   line-height: 2;
   opacity: 0.9;
+  margin-top: 10px;
+}
+img#icon.weather-icon.float-left {
+  padding-bottom: 24px;
 }
 .units {
   position: relative;
@@ -63,14 +67,17 @@ h1 {
   text-decoration: none;
   cursor: default;
 }
-.col-6 {
-}
+
 h2 {
   color: #4e3188;
   font-size: 28px;
   font-weight: 100;
   opacity: 0.9;
   margin: 0 auto;
+  padding-top: 8px;
+}
+ul {
+  padding: 10px 0 10px 24px;
 }
 li {
   font-size: 16px;
@@ -80,8 +87,9 @@ li {
 .condition {
   color: #c54c82;
 }
+
 .col-4 li {
-  padding-top: 10px;
+  padding: 0 auto;
   opacity: 0.9;
 }
 .col {
@@ -96,10 +104,9 @@ li {
 }
 .weather-forecast {
   text-align: center;
-  padding: 20px auto;
 }
 .forecast-temperatures {
-  font-size: 15px;
+  font-size: 14px;
   color: #5e63b6;
 }
 .forecast-temperature-max {
